@@ -1,14 +1,49 @@
 import useAuth from '@/hooks/useAuth';
 import { TbFidgetSpinner } from 'react-icons/tb';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const Register = () => {
-  const { loading, signInWithGoogle } = useAuth();
+  const { loading, signInWithGoogle, createUser, setLoading, updateUserProfile } = useAuth();
+  const navigate = useNavigate();
 
   const handleGoogleSignIn = async () => {
-    await signInWithGoogle();
+    try {
+      const result = await signInWithGoogle();
+      console.log('googleSignedInUser=>', result);
+      toast.success('Registered Successfully');
+      navigate('/');
+    } catch (error) {
+      setLoading(false);
+      toast.error(error.code || error.message);
+      console.log(error);
+    }
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+    const formData = Object.fromEntries(form.entries());
+    console.log(formData);
+    try {
+      setLoading(true);
+
+      // user registration
+      const result = await createUser(formData.email, formData.password);
+      console.log('manualSignedUpUser=>', result);
+
+      // Save username and photo in firebase
+      await updateUserProfile(formData.name, formData.image);
+      toast.success('Registered Successfully');
+      navigate('/');
+    } catch (error) {
+      setLoading(false);
+      toast.error(error.code || error.message);
+      console.log(error);
+    }
+  };
+
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
@@ -16,7 +51,7 @@ const Register = () => {
           <h1 className="my-3 text-4xl font-bold">Sign Up</h1>
           <p className="text-sm text-gray-400">Welcome to TechTore</p>
         </div>
-        <form className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-4">
             <div>
               <label htmlFor="email" className="block mb-2 text-sm">

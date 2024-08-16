@@ -1,5 +1,14 @@
 import { app } from '@/firebase/firebase.config';
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, updateProfile } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+  updateProfile,
+} from 'firebase/auth';
 import { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -23,6 +32,10 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  const logOut = () => {
+    return signOut(auth);
+  };
+
   const signInWithGoogle = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
@@ -41,9 +54,11 @@ const AuthProvider = ({ children }) => {
       if (currentUser) {
         setUser(currentUser);
         setLoading(false);
+        console.log('currentUser==>', currentUser);
       } else {
         setUser(null);
         setLoading(false);
+        console.log('currentUser==>', currentUser);
       }
     });
 
@@ -52,7 +67,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { user, loading, createUser, signIn, signInWithGoogle, updateUserProfile };
+  const authInfo = { user, loading, setLoading, createUser, signIn, logOut, signInWithGoogle, updateUserProfile };
 
   return <AuthContext.Provider value={authInfo}> {children} </AuthContext.Provider>;
 };

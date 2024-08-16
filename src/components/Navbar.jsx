@@ -1,10 +1,24 @@
 import { useContext } from 'react';
 import { Button } from './ui/button';
 import { AuthContext } from '@/providers/AuthProvider';
+import { Link, useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogOut = async () => {
+    try {
+      await logOut();
+      toast.success('Logged Out Successfully');
+    } catch (error) {
+      console.log(error);
+      toast.error(error.code || error.message);
+    }
+  };
+
   return (
     <div>
       <header className="bg-white">
@@ -66,11 +80,29 @@ const Navbar = () => {
 
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <Button>Login</Button>
+                {user ? (
+                  <>
+                    <Avatar>
+                      <AvatarImage src={user?.photoURL} referrerPolicy="no-referrer" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                    <Button variant="destructive" onClick={handleLogOut}>
+                      Logout
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <Link to={'/login'}>
+                      <Button>Login</Button>
+                    </Link>
 
-                <div className="hidden sm:flex">
-                  <Button variant="outline">Register</Button>
-                </div>
+                    <div className="hidden sm:flex">
+                      <Link to={'/register'}>
+                        <Button variant="outline">Register</Button>
+                      </Link>
+                    </div>
+                  </>
+                )}
               </div>
 
               <div className="block md:hidden">
