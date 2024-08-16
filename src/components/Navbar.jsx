@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import { Button } from './ui/button';
+import { AuthContext } from '@/providers/AuthProvider';
 
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   return (
     <div>
       <header className="bg-white">
