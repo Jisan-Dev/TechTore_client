@@ -1,5 +1,16 @@
 /* eslint-disable react/prop-types */
 import { Badge } from '@/components/ui/badge';
+import { Rating, ThinStar } from '@smastrom/react-rating';
+import { format } from 'date-fns';
+
+import '@smastrom/react-rating/style.css';
+
+// Declare it outside your component so it doesn't get re-created
+const myStyles = {
+  itemShapes: ThinStar,
+  activeFillColor: '#ffdf40',
+  inactiveFillColor: '#c2c293',
+};
 
 const ProductCard = ({ product }) => {
   return (
@@ -13,36 +24,25 @@ const ProductCard = ({ product }) => {
         <div className="mt-4 px-5 pb-5 flex flex-col h-full">
           <div className="flex-1">
             <p className="text-xs"> {product?.category} </p>
-            <p className="flex justify-between items-center">
+            <p className="flex justify-between items-start">
               <h5 className="text-xl tracking-tight text-neutral-900">{product?.name}</h5>
               <Badge> {product?.brand} </Badge>
             </p>
           </div>
           <div>
-            <div className="mt-2 mb-5 flex items-center justify-between">
+            <div className="my-2 flex items-center justify-between">
               <p>
                 <span className="text-3xl font-bold text-neutral-900">${product?.price}</span>
+                <p className="text-xs">
+                  <span className="font-medium mt-1">created at:</span> {format(new Date(product?.creation_date), 'do MMM yyyy')}
+                </p>
               </p>
-              <div className="flex items-center">
-                <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg aria-hidden="true" className="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <span className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold"> {product?.ratings} </span>
-              </div>
             </div>
-            <a
+            <div className="flex items-center">
+              <Rating style={{ maxWidth: 130 }} itemStyles={myStyles} value={product?.ratings} readOnly />
+              <span className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold"> {product?.ratings} </span>
+            </div>
+            {/* <a
               href="#"
               className="flex items-center justify-center rounded-md bg-neutral-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
               <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
                 />
               </svg>
               Add to cart
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

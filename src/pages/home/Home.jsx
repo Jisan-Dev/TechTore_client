@@ -98,6 +98,16 @@ const Home = () => {
             <option value="Apple">Apple</option>
             <option value="Samsung">Samsung</option>
             <option value="Lenovo">Lenovo</option>
+            <option value="Google">Google</option>
+            <option value="Dell">Dell</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="Realme">Realme</option>
+            <option value="Sony">Sony</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="HP">HP</option>
           </select>
         </div>
         <div>
