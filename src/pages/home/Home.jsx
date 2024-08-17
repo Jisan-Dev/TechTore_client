@@ -49,15 +49,15 @@ const Home = () => {
   return (
     <div className="container">
       <form onSubmit={handleSearch}>
-        <div className="flex p-1 overflow-hidden border rounded-lg    focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+        <div className="flex p-1 overflow-hidden border rounded-lg    focus-within:ring focus-within:ring-opacity-40 focus-within:border-neutral-400 focus-within:ring-neutral-300">
           <input
             className="px-6 py-2  w-full text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
             type="text"
             name="search"
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
-            placeholder="Enter Job Title"
-            aria-label="Enter Job Title"
+            placeholder="Enter Phone Name"
+            aria-label="Enter Phone Name"
           />
 
           <button
@@ -131,7 +131,7 @@ const Home = () => {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-4 max-sm:grid-cols-2 max-sm:gap-2 gap-5">
+      <div className="grid grid-cols-4 max-sm:grid-cols-1 max-sm:gap-2 max-lg:grid-cols-3 gap-5">
         {products?.map((product) => (
           <ProductCard key={product._id} product={product} />
         ))}
@@ -157,8 +157,8 @@ const Home = () => {
             onClick={() => setCurrentPage(btnNum)}
             key={btnNum}
             className={`hidden ${
-              currentPage === btnNum ? 'bg-blue-500 text-white' : ''
-            } px-4 py-2 mx-1 transition-colors duration-300 transform  rounded-md sm:inline hover:bg-blue-500  hover:text-white`}>
+              currentPage === btnNum ? 'bg-neutral-800 text-white' : ''
+            } px-4 py-2 mx-1 transition-colors duration-300 transform  rounded-md sm:inline hover:bg-neutral-700  hover:text-white`}>
             {btnNum}
           </button>
         ))}
@@ -167,7 +167,7 @@ const Home = () => {
         <button
           onClick={() => setCurrentPage(currentPage + 1)}
           disabled={currentPage === numberOfPages}
-          className="px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-gray-200 rounded-md hover:bg-blue-500 disabled:hover:bg-gray-200 disabled:hover:text-gray-500 hover:text-white disabled:cursor-not-allowed disabled:text-gray-500">
+          className="px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-gray-200 rounded-md hover:bg-neutral-800 disabled:hover:bg-gray-200 disabled:hover:text-gray-500 hover:text-white disabled:cursor-not-allowed disabled:text-gray-500">
           <div className="flex items-center -mx-1">
             <span className="mx-1">Next</span>
 

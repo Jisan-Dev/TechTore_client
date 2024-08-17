@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="sm:flex sm:gap-4">
+              <div className="flex gap-1 sm:flex sm:gap-4">
                 {user ? (
                   <>
                     <Avatar>

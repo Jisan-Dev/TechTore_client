@@ -7,34 +7,14 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center">
           <div className="flex gap-2 items-center">
             {/* <img className="w-auto h-7" src={logo} alt="" /> */}
-            <span className="font-black text-xl">TechTrove</span>
+            <span className="font-black text-[42px]">TechTrove</span>
           </div>
 
-          <div className="flex flex-wrap justify-center mt-6 -mx-4">
-            <a href="#" className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 " aria-label="Reddit">
-              {' '}
-              Home{' '}
-            </a>
-
-            <a href="#" className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 " aria-label="Reddit">
-              {' '}
-              About{' '}
-            </a>
-
-            <a href="#" className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 " aria-label="Reddit">
-              {' '}
-              Teams{' '}
-            </a>
-
-            <a href="#" className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 " aria-label="Reddit">
-              {' '}
-              Privacy{' '}
-            </a>
-
-            <a href="#" className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 " aria-label="Reddit">
-              {' '}
-              Cookies{' '}
-            </a>
+          <div className="mt-4 -mx-4 max-w-[850px]">
+            <p className="text-neutral-600">
+              Discover the latest and greatest in technology at TechTrove, your go-to destination for smartphones, tablets, and laptops. Explore a curated selection of cutting-edge
+              gadgets, complete with detailed descriptions, user reviews, and seamless shopping experience.
+            </p>
           </div>
         </div>
 
