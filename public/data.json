@@ -1,0 +1,412 @@
+[
+  {
+    "name": "iPhone 14 Pro Max",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880378/iphone14promax_rkfsde.webp",
+    "brand": "Apple",
+    "description": "6.7-inch display, A16 Bionic chip, 5G, triple-camera system",
+    "price": 1299.99,
+    "category": "Smartphone",
+    "ratings": 4.9,
+    "creation_date": "2023-08-01T10:20:30Z"
+  },
+  {
+    "name": "Samsung Galaxy S23 Ultra",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880540/ssGalaxyS23ultra_nnb8be.webp",
+    "brand": "Samsung",
+    "description": "6.9-inch display, Exynos 2200, 5G, quad-camera setup",
+    "price": 1399.99,
+    "category": "Smartphone",
+    "ratings": 4.8,
+    "creation_date": "2023-08-02T11:25:30Z"
+  },
+  {
+    "name": "Google Pixel 7",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880591/googlePixel7_q4r5qv.webp",
+    "brand": "Google",
+    "description": "6.4-inch display, Google Tensor G2, 5G, dual-camera setup",
+    "price": 799.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-07-15T09:15:25Z"
+  },
+  {
+    "name": "Samsung Galaxy Tab S8",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880633/Samsung-Galaxy-Tab-S8_ig8rqc.webp",
+    "brand": "Samsung",
+    "description": "11-inch display, Snapdragon 8 Gen 1, Wi-Fi, dual-camera setup",
+    "price": 649.99,
+    "category": "Tablet",
+    "ratings": 4.6,
+    "creation_date": "2023-07-20T12:20:10Z"
+  },
+  {
+    "name": "iPad Pro 12.9 (2022)",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880674/iPad-Pro-12.9_ga8do3.webp",
+    "brand": "Apple",
+    "description": "12.9-inch display, M2 chip, Wi-Fi, dual-camera setup",
+    "price": 1099.99,
+    "category": "Tablet",
+    "ratings": 4.9,
+    "creation_date": "2023-07-25T14:30:30Z"
+  },
+  {
+    "name": "Dell XPS 13",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880784/dellXPS13_ejm8rp.webp",
+    "brand": "Dell",
+    "description": "13.4-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1299.99,
+    "category": "Laptop",
+    "ratings": 4.8,
+    "creation_date": "2023-07-30T16:40:50Z"
+  },
+  {
+    "name": "MacBook Air M2",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880915/mcBookAirM2_b7wayq.webp",
+    "brand": "Apple",
+    "description": "13.6-inch display, M2 chip, 8GB RAM, 256GB SSD",
+    "price": 1199.99,
+    "category": "Laptop",
+    "ratings": 4.7,
+    "creation_date": "2023-08-05T11:20:15Z"
+  },
+  {
+    "name": "Asus ROG Zephyrus G14",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881003/Asus-ROG-Zephyrus-G14_bxux4v.webp",
+    "brand": "Asus",
+    "description": "14-inch display, AMD Ryzen 9, 32GB RAM, 1TB SSD",
+    "price": 1799.99,
+    "category": "Laptop",
+    "ratings": 4.9,
+    "creation_date": "2023-07-22T14:50:25Z"
+  },
+  {
+    "name": "Microsoft Surface Pro 8",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881099/Microsoft_Surface_Pro_8_ntchrx.webp",
+    "brand": "Microsoft",
+    "description": "13-inch display, Intel Core i5, 8GB RAM, 128GB SSD",
+    "price": 999.99,
+    "category": "Tablet",
+    "ratings": 4.5,
+    "creation_date": "2023-06-18T13:15:40Z"
+  },
+  {
+    "name": "Samsung Galaxy Book Pro 360",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881190/Samsung_Galaxy_Book_Pro_360_eexhyn.webp",
+    "brand": "Samsung",
+    "description": "15.6-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1399.99,
+    "category": "Laptop",
+    "ratings": 4.8,
+    "creation_date": "2023-05-30T10:25:35Z"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881255/Lenovo_ThinkPad_X1_Carbon_mlauh6.webp",
+    "brand": "Lenovo",
+    "description": "14-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1449.99,
+    "category": "Laptop",
+    "ratings": 4.7,
+    "creation_date": "2023-06-15T09:50:30Z"
+  },
+  {
+    "name": "iPhone 13 Mini",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881307/iPhone_13_Mini_ru0s7o.webp",
+    "brand": "Apple",
+    "description": "5.4-inch display, A15 Bionic chip, 5G, dual-camera setup",
+    "price": 699.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-04-11T10:45:25Z"
+  },
+  {
+    "name": "Samsung Galaxy A52",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881351/Samsung_Galaxy_A52_fp1nta.webp",
+    "brand": "Samsung",
+    "description": "6.5-inch display, Snapdragon 750G, 5G, quad-camera setup",
+    "price": 499.99,
+    "category": "Smartphone",
+    "ratings": 4.6,
+    "creation_date": "2023-07-08T12:10:25Z"
+  },
+  {
+    "name": "Xiaomi Mi 11",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881528/Xiaomi_Mi_11_piwsrd.webp",
+    "brand": "Xiaomi",
+    "description": "6.81-inch display, Snapdragon 888, 5G, triple-camera setup",
+    "price": 799.99,
+    "category": "Smartphone",
+    "ratings": 4.5,
+    "creation_date": "2023-06-12T10:30:10Z"
+  },
+  {
+    "name": "Oppo Reno 7 Pro",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881626/Oppo_Reno_7_Pro_ufaqox.webp",
+    "brand": "Oppo",
+    "description": "6.55-inch display, MediaTek Dimensity 1200, 5G, triple-camera setup",
+    "price": 749.99,
+    "category": "Smartphone",
+    "ratings": 4.4,
+    "creation_date": "2023-07-03T13:45:20Z"
+  },
+  {
+    "name": "Huawei MatePad Pro",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881692/Huawei_MatePad_Pro_d8rjvu.webp",
+    "brand": "Huawei",
+    "description": "12.6-inch display, Kirin 9000E, Wi-Fi, dual-camera setup",
+    "price": 899.99,
+    "category": "Tablet",
+    "ratings": 4.6,
+    "creation_date": "2023-05-22T15:10:30Z"
+  },
+  {
+    "name": "Sony Xperia 5 III",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881745/Sony_Xperia_5_III_ku94pa.webp",
+    "brand": "Sony",
+    "description": "6.1-inch display, Snapdragon 888, 5G, triple-camera setup",
+    "price": 999.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-07-29T10:40:20Z"
+  },
+  {
+    "name": "Realme GT Neo 2",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881804/Realme_GT_Neo_2_hks8si.webp",
+    "brand": "Realme",
+    "description": "6.62-inch display, Snapdragon 870, 5G, triple-camera setup",
+    "price": 549.99,
+    "category": "Smartphone",
+    "ratings": 4.5,
+    "creation_date": "2023-05-07T09:20:35Z"
+  },
+  {
+    "name": "Samsung Galaxy S23",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880540/ssGalaxyS23ultra_nnb8be.webp",
+    "brand": "Samsung",
+    "description": "6.8-inch display, Snapdragon 8 Gen 1, 5G, triple-camera setup",
+    "price": 999.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-08-01T09:20:00Z"
+  },
+  {
+    "name": "Apple iPad Pro 11 (2022)",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881908/Apple_iPad_Pro_11_2022_e2fees.webp",
+    "brand": "Apple",
+    "description": "11-inch display, M2 chip, Wi-Fi, dual-camera setup",
+    "price": 999.99,
+    "category": "Tablet",
+    "ratings": 4.8,
+    "creation_date": "2023-07-28T11:30:00Z"
+  },
+  {
+    "name": "Microsoft Surface Laptop 4",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881956/Microsoft_Surface_Laptop_4_ovbqxx.webp",
+    "brand": "Microsoft",
+    "description": "13.5-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1299.99,
+    "category": "Laptop",
+    "ratings": 4.7,
+    "creation_date": "2023-07-20T14:00:00Z"
+  },
+  {
+    "name": "Google Pixel 6a",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882006/Google_Pixel_6a_xiw0rq.webp",
+    "brand": "Google",
+    "description": "6.1-inch display, Google Tensor, 5G, dual-camera setup",
+    "price": 449.99,
+    "category": "Smartphone",
+    "ratings": 4.5,
+    "creation_date": "2023-06-15T08:45:00Z"
+  },
+  {
+    "name": "Dell Inspiron 15",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882048/Dell_Inspiron_15_g9dniq.webp",
+    "brand": "Dell",
+    "description": "15.6-inch display, Intel Core i5, 8GB RAM, 256GB SSD",
+    "price": 699.99,
+    "category": "Laptop",
+    "ratings": 4.3,
+    "creation_date": "2023-07-05T09:30:00Z"
+  },
+  {
+    "name": "Sony Xperia 10 IV",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882091/Sony_Xperia_10_IV_ds3zrz.webp",
+    "brand": "Sony",
+    "description": "6.0-inch display, Snapdragon 695, 5G, triple-camera setup",
+    "price": 599.99,
+    "category": "Smartphone",
+    "ratings": 4.4,
+    "creation_date": "2023-06-10T10:15:00Z"
+  },
+  {
+    "name": "Lenovo Yoga 9i",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882141/Lenovo_Yoga_9i_wje0nk.webp",
+    "brand": "Lenovo",
+    "description": "14-inch display, Intel Core i7, 16GB RAM, 1TB SSD",
+    "price": 1499.99,
+    "category": "Laptop",
+    "ratings": 4.6,
+    "creation_date": "2023-05-22T11:00:00Z"
+  },
+  {
+    "name": "Apple MacBook Pro 16 (2022)",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882194/Apple_MacBook_Pro_16_2022_yrmanf.webp",
+    "brand": "Apple",
+    "description": "16-inch display, M2 Max chip, 32GB RAM, 1TB SSD",
+    "price": 2499.99,
+    "category": "Laptop",
+    "ratings": 4.9,
+    "creation_date": "2023-07-01T12:45:00Z"
+  },
+  {
+    "name": "Huawei MatePad 11",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882250/Huawei_MatePad_11_huqjhr.webp",
+    "brand": "Huawei",
+    "description": "10.95-inch display, Snapdragon 865, Wi-Fi, quad-speaker setup",
+    "price": 499.99,
+    "category": "Tablet",
+    "ratings": 4.5,
+    "creation_date": "2023-06-18T13:30:00Z"
+  },
+  {
+    "name": "Xiaomi Mi 11 Ultra",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882372/Xiaomi_Mi_11_Ultra_h28uiz.webp",
+    "brand": "Xiaomi",
+    "description": "6.81-inch display, Snapdragon 888, 5G, triple-camera setup",
+    "price": 1199.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-05-25T14:15:00Z"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold 4",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882514/Samsung_Galaxy_Z_Fold_4_r2scja.webp",
+    "brand": "Samsung",
+    "description": "7.6-inch foldable display, Snapdragon 8+ Gen 1, 5G, quad-camera setup",
+    "price": 1999.99,
+    "category": "Smartphone",
+    "ratings": 4.8,
+    "creation_date": "2023-08-03T09:00:00Z"
+  },
+  {
+    "name": "Asus ZenBook Duo 14",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882602/Asus_ZenBook_Duo_14_avuhi3.webp",
+    "brand": "Asus",
+    "description": "14-inch dual display, Intel Core i7, 16GB RAM, 1TB SSD",
+    "price": 1699.99,
+    "category": "Laptop",
+    "ratings": 4.7,
+    "creation_date": "2023-06-25T10:30:00Z"
+  },
+  {
+    "name": "Realme Pad Mini",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882671/Realme_Pad_Mini_oeliqz.webp",
+    "brand": "Realme",
+    "description": "8.7-inch display, Unisoc T616, Wi-Fi, dual speakers",
+    "price": 199.99,
+    "category": "Tablet",
+    "ratings": 4.2,
+    "creation_date": "2023-07-07T11:45:00Z"
+  },
+  {
+    "name": "Apple iPhone 14 Mini",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882758/Apple_iPhone_14_Mini_rppuqs.webp",
+    "brand": "Apple",
+    "description": "5.4-inch display, A15 Bionic chip, 5G, dual-camera setup",
+    "price": 799.99,
+    "category": "Smartphone",
+    "ratings": 4.6,
+    "creation_date": "2023-08-10T12:00:00Z"
+  },
+  {
+    "name": "OnePlus 9 Pro",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882843/OnePlus_9_Pro2_dcrqfv.webp",
+    "brand": "OnePlus",
+    "description": "6.7-inch display, Snapdragon 888, 5G, quad-camera setup",
+    "price": 969.99,
+    "category": "Smartphone",
+    "ratings": 4.5,
+    "creation_date": "2023-07-15T13:15:00Z"
+  },
+  {
+    "name": "HP Spectre x360 14",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882911/HP_Spectre_x360_14_nyscjt.webp",
+    "brand": "HP",
+    "description": "14-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1499.99,
+    "category": "Laptop",
+    "ratings": 4.8,
+    "creation_date": "2023-07-20T14:30:00Z"
+  },
+  {
+    "name": "Samsung Galaxy Tab S7 FE",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882980/Samsung_Galaxy_Tab_S7_FE_vh3pg0.webp",
+    "brand": "Samsung",
+    "description": "12.4-inch display, Snapdragon 750G, Wi-Fi, dual speakers",
+    "price": 529.99,
+    "category": "Tablet",
+    "ratings": 4.6,
+    "creation_date": "2023-06-05T15:45:00Z"
+  },
+  {
+    "name": "Lenovo Legion 5 Pro",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723883022/Lenovo_Legion_5_Pro_wce4af.webp",
+    "brand": "Lenovo",
+    "description": "16-inch display, AMD Ryzen 7, 16GB RAM, 1TB SSD",
+    "price": 1799.99,
+    "category": "Laptop",
+    "ratings": 4.9,
+    "creation_date": "2023-06-15T09:00:00Z"
+  },
+  {
+    "name": "Samsung Galaxy S23",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723880540/ssGalaxyS23ultra_nnb8be.webp",
+    "brand": "Samsung",
+    "description": "6.8-inch display, Snapdragon 8 Gen 1, 5G, triple-camera setup",
+    "price": 999.99,
+    "category": "Smartphone",
+    "ratings": 4.7,
+    "creation_date": "2023-08-01T09:20:00Z"
+  },
+  {
+    "name": "Apple iPad Pro 11 (2022)",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881908/Apple_iPad_Pro_11_2022_e2fees.webp",
+    "brand": "Apple",
+    "description": "11-inch display, M2 chip, Wi-Fi, dual-camera setup",
+    "price": 999.99,
+    "category": "Tablet",
+    "ratings": 4.8,
+    "creation_date": "2023-07-28T11:30:00Z"
+  },
+  {
+    "name": "Microsoft Surface Laptop 4",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723881956/Microsoft_Surface_Laptop_4_ovbqxx.webp",
+    "brand": "Microsoft",
+    "description": "13.5-inch display, Intel Core i7, 16GB RAM, 512GB SSD",
+    "price": 1299.99,
+    "category": "Laptop",
+    "ratings": 4.7,
+    "creation_date": "2023-07-20T14:00:00Z"
+  },
+  {
+    "name": "Google Pixel 6a",
+    "image": "https://example.com/images/pixel6a.jpg",
+    "brand": "Google",
+    "description": "6.1-inch display, Google Tensor, 5G, dual-camera setup",
+    "price": 449.99,
+    "category": "Smartphone",
+    "ratings": 4.5,
+    "creation_date": "2023-06-15T08:45:00Z"
+  },
+  {
+    "name": "Dell Inspiron 15",
+    "image": "https://res.cloudinary.com/dijckl5ab/image/upload/v1723882048/Dell_Inspiron_15_g9dniq.webp",
+    "brand": "Dell",
+    "description": "15.6-inch display, Intel Core i5, 8GB RAM, 256GB SSD",
+    "price": 699.99,
+    "category": "Laptop",
+    "ratings": 4.3,
+    "creation_date": "2023-07-05T09:30:00Z"
+  }
+]
