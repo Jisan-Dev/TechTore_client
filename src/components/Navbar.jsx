@@ -25,10 +25,10 @@ const Navbar = () => {
         <div className="mx-auto max-w-screen-xl px-2">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <a className="block text-neutral-800" href="#">
+              <Link to={'/'} className="block text-neutral-800" href="#">
                 <span className="sr-only">Home</span>
-                <h1 className="text-2xl font-bold">TechTore</h1>
-              </a>
+                <h1 className="text-[28px] font-bold">TechTrove</h1>
+              </Link>
             </div>
 
             <div className="hidden md:block">
