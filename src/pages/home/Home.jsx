@@ -1,4 +1,5 @@
 import ProductCard from '@/components/ProductCard';
+import { Button } from '@/components/ui/button';
 import useAxiosPublic from '@/hooks/useAxiosPublic';
 import { useEffect, useState } from 'react';
 
@@ -43,6 +44,16 @@ const Home = () => {
     setSearch(searchText);
   };
 
+  const handleReset = () => {
+    setFilter('');
+    setFilterBrand('');
+    setSortPrice('');
+    setSortDate('');
+    setSearchText('');
+    setSearch('');
+    setCurrentPage(1);
+  };
+
   const numberOfPages = Math.ceil(count / itemsPerPage);
   const pages = [...Array(numberOfPages).keys()].map((element) => element + 1);
 
@@ -77,7 +88,7 @@ const Home = () => {
             value={filter}
             name="category"
             id="category"
-            className="border p-4 rounded-lg">
+            className="border p-4 rounded-lg cursor-pointer">
             <option value="">Filter By Category</option>
             <option value="Smartphone">Smartphone</option>
             <option value="Tablet">Tablet</option>
@@ -93,7 +104,7 @@ const Home = () => {
             value={filterBrand}
             name="brand"
             id="brand"
-            className="border p-4 rounded-lg">
+            className="border p-4 rounded-lg cursor-pointer">
             <option value="">Filter By Brand</option>
             <option value="Apple">Apple</option>
             <option value="Samsung">Samsung</option>
@@ -119,7 +130,7 @@ const Home = () => {
             value={sortPrice}
             name="sortPrice"
             id="sortPrice"
-            className="border p-4 rounded-md">
+            className="border p-4 rounded-md cursor-pointer">
             <option value="">Sort By Price</option>
             <option value="dsc">High to low</option>
             <option value="asc">Low to high</option>
@@ -134,11 +145,16 @@ const Home = () => {
             value={sortDate}
             name="sortDate"
             id="sortDate"
-            className="border p-4 rounded-md">
+            className="border p-4 rounded-md cursor-pointer">
             <option value="">Sort By Date</option>
             <option value="dsc">Newest first</option>
             <option value="asc">Oldest first</option>
           </select>
+        </div>
+        <div>
+          <Button className="h-12" size="lg" onClick={handleReset}>
+            Reset
+          </Button>
         </div>
       </div>
       <div className="grid grid-cols-4 max-sm:grid-cols-1 max-sm:gap-2 max-lg:grid-cols-3 gap-5">
