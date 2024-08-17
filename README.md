@@ -1,8 +1,12 @@
-# React + Vite
+# TechTrove - product showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+live link: https://techtore-9c206.web.app/
 
-Currently, two official plugins are available:
+server repo: https://github.com/Jisan-Dev/TechTore_server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To run the project locally
+
+- After cloning the repository run "npm install" to install dependencies
+- Add firebase SDKs
+- Connect the server
+- Finally run "npm run dev" to start the client server
